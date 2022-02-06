@@ -4,7 +4,7 @@
 Project Title:
 
 Team Member's Names & Github Usernames:
-Cole Gaito /gaitocole
+Cole Gaito /gaitocole, Jake Sandelin /JakeSandelinColorado
 
 Vision Statement:
 The vision for our group project is to create a task list that will notify individuals via text or other communication means that they have a waiting task.  Overall we wanted something that a user could set up through the web portal, but have the application interact with them through additional means.  We also wanted something that would be flexible enough that could be scaled and adapt to the various tools that we use and encounter.
