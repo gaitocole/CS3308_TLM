@@ -16,7 +16,7 @@ def test(phonenumb):
     if (phone_number_test.correct_length(phonenumb) and phone_number_test.only_digits(phonenumb)):
         return True
     elif(phone_number_test.only_digits(phonenumb) != True ):
-        print("\nPlease type your phone number without delinations such as \( or \) or \-.")
+        print("\nPlease type your phone number without delinations such as ( or ) or -.")
     else:
         print("\nPlease type in 10 numbers.")
 
