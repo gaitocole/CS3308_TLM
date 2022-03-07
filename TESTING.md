@@ -1,7 +1,7 @@
 Project Title: Reminder List
 
 Team Member's Names:
-Cole Gaito
+Cole Gaito, Jake Sandelin
 
 
 
@@ -34,7 +34,28 @@ Test Case 1 & 2:
 
 
 Test Case 3:
-
+	test_availableAlarms
+		Verify the valid insertion of an alarm into the alarm database
+	description
+		Create a test database and pass that database and alarm table to the alarm insert macro.
+	Pre-Conditions
+		The only pre-condition here would be that the insert alarm feature takes all the same variables as our test
+	Test Steps
+		1. Create Test Database and Table
+		2. Find the current Date and Time and place in a variable
+		3. Pass datetime variable into the insert alarm procedure
+		4. Verify that the alarm now exist in the database
+		5. Remove test database
+	Expected Result
+		That alarm was properly inserted with the date and time
+	Actual Result
+		Alarm was inserted as expected
+	Status (Pass/Fail"
+		Pass
+	Notes
+		N/A
+	Post-Conditions
+		None other then the database can pass those details properly. 
 Test Case 4:
 
 User Acceptance Testing:
