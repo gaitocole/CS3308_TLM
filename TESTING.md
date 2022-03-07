@@ -8,13 +8,11 @@ Cole Gaito, Jake Sandelin
 
 Automated Test Cases:
 
-Test Case 1 & 2:
+Test Case 1:
 	Use Case Name
-		Verify the Validity of a PhoneNumber that is entered into the system.
+		Verify the Validity of a PhoneNumber that is entered into the system is only digits.
 	Description
-		Test the input of a phonenumber to verify its both 10 digits long, and does not contain anything other than numbers.
-		Test Case 1 - digits
-		Test Case 2 - length of input string
+		Test the input of a phonenumber to verify it does not contain anything other than numbers.
 	Pre-conditions
 		These tests run independent of the application, and thus there are no preconditions.
 	Test steps
@@ -30,7 +28,27 @@ Test Case 1 & 2:
 	Notes
 		This is for automated testing.
 	Post-conditions
-		
+
+Test Case 2:
+	Use Case Name
+		Verify the Validity of a PhoneNumber that is entered into the system.
+	Description
+		Test the input of a phonenumber to verify its exactly 10 digits long.
+	Pre-conditions
+		These tests run independent of the application, and thus there are no preconditions.
+	Test steps
+		1. Run the application ./list_Input_test.py from the command line.
+		2. The automated test cases should ensure that that the functions of the phonenumber tests should validate with either a True or False statement for a valid entry.
+		3. You should have a returned message that both tests ran and passed.
+	Expected results
+		The automated tests should both pass.
+	Actual Result
+		"Ran 2 tests..."
+	Status (Pass/Fail)
+		Pass
+	Notes
+		This is for automated testing.
+	Post-conditions
 
 
 Test Case 3:
