@@ -1,7 +1,7 @@
 Project Title: Reminder List
 
 Team Member's Names:
-Cole Gaito, Jake Sandelin
+Cole Gaito, Jake Sandelin, Kyle Tomlinson
 
 
 
@@ -50,7 +50,6 @@ Test Case 2:
 		This is for automated testing.
 	Post-conditions
 
-
 Test Case 3:
 	test_availableAlarms
 		Verify the valid insertion of an alarm into the alarm database
@@ -73,7 +72,8 @@ Test Case 3:
 	Notes
 		N/A
 	Post-Conditions
-		None other then the database can pass those details properly. 
+		None other then the database can pass those details properly.
+
 Test Case 4:
 	Use case name
 		Verify the valid insertion of notification preference (email or phone)
@@ -95,6 +95,28 @@ Test Case 4:
 		Database path must be specified
 	Post-conditions
 		N/A
+
+Test Case 5:
+	Use Case Name
+		Verify the Validity of New Password Syntax
+	Description
+		Tests new password validation functions in newPassword.py
+	Pre-conditions
+		These tests run independent of the application, and thus there are no preconditions aside from having python3 installed.
+	Test steps
+		1. Run the application ./newPasswordTest.py from the command line.
+		2. The automated test cases should ensure that the newPassword validation functions behave as expected.
+		3. You should have a returned message that both tests ran and passed.
+	Expected results
+		The automated tests should all pass.
+	Actual Result
+		"Ran 7 tests..."
+	Status (Pass/Fail)
+		Pass
+	Notes
+		This is for automated testing.
+	Post-conditions
+        None.
 
 User Acceptance Testing:
 
@@ -165,7 +187,35 @@ Test Case 2:
 	Post-conditions
 
 Test Case 3:
+	Use Case Name
+		Verify Non-Syntax Logic for New Password Entry
+	Description
+		This test will validate that the end user sees appropriate responses when creating a new password.
+	Pre-conditions
+		Current: Python3 must be installed.
+	Test steps
+		1. Run the application ./newPassword.py from the command line.
+		2. User should be prompted to enter a new password and provided with requirements for password syntax.
+		3. Type a password that has at least eight characters and one number.
+		4. A prompt to re-enter your password should appear.
+        5. Type the same password from #3 above.
+		6. Text "Password accepted." should appear.
+        7. Run the application ./newPassword.py from the command line again.
+		8. Type a password that has at least eight characters and one number.
+		9. When the prompt to re-enter your password appears, type something different from the password in #8 above.
+        10. Text "The passwords entered do not match." should appear, followed by the prompt "Enter q to quit or t to try again:"
+        11. Enter t
+        12. The new password prompt should restart at the beginning.
+        13. Repeat steps 8 and 9.
+        14. When prompted, enter q.
+	Expected results
+		Upon entering "q," you should be returned to the command line.
+	Actual Result
+		Was returned to command line.
+	Status (Pass/Fail)
+		Pass
+	Notes
+		This is for manual user testing.
 
 Test Case 4:
-
 
