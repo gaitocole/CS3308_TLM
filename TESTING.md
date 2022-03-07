@@ -75,6 +75,26 @@ Test Case 3:
 	Post-Conditions
 		None other then the database can pass those details properly. 
 Test Case 4:
+	Use case name
+		Verify the valid insertion of notification preference (email or phone)
+	Description
+		Create a database when prompted for the username and notification preference
+	Pre-Conditions
+		These tests run independent of the application, and thus there are no preconditions.
+	Test steps
+		1. Create a database and table
+		2. When prompted, type in username (asueppel 1990) and notification preference (email)
+		3. Run the application ./notification_test.py from the command line
+	Expected result
+		No AssertionError message is received
+	Actual result
+		Notification preference was successfully added
+	Status
+		Pass
+	Notes
+		Database path must be specified
+	Post-conditions
+		N/A
 
 User Acceptance Testing:
 
