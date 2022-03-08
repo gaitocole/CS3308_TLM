@@ -78,17 +78,17 @@ Test Case 4:
 	Use case name
 		Verify the valid insertion of notification preference (email or phone)
 	Description
-		Create a database when prompted for the username and notification preference
+		Create a database with a username and notification preference
 	Pre-Conditions
-		These tests run independent of the application, and thus there are no preconditions.
+		Specify in the file where the SQLite3 database should be stored.
 	Test steps
-		1. Create a database and table
-		2. When prompted, type in username (asueppel 1990) and notification preference (email)
-		3. Run the application ./notification_test.py from the command line
+		1. In notification_test2.py, specify where the SQLite3 database should be stored.
+		2. Run the application ./notification_test2.py from the command line.
+		3. The test test_Notification will pass and "OK" will be displayed.
 	Expected result
-		No AssertionError message is received
+		No "FAILED" message is received.
 	Actual result
-		Notification preference was successfully added
+		Notification preference was successfully added and no "FAILED" message is received.
 	Status
 		Pass
 	Notes
