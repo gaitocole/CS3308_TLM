@@ -1,0 +1,7 @@
+Here is the documentation folder for the application.
+
+
+Included will a various synopsis for each of the included applications,
+as well as the design flow for the application.
+
+
