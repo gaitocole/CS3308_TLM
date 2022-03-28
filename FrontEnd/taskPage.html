@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="taskPage.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+	<h1>Remind_Me</h1>
+	<h2>phone_number_goes_here</h2>
+
+    <div id="newTask" class="taskMenu">
+		<label for="ntLabel">set new</label>
+		<input type="checkbox" id="ntLabel" class="togHidden">
+		<div class="ntBullet"></div>
+		
+		<div id="ntInput" class="ntSubMenu">
+			<p>◙ frequency?</p>
+			<form class="ntForm">
+			  <input type="radio" id="oneTime" name="freq" value="oneTime">
+			  <label for="oneTime">one-time</label><br>
+			  <input type="radio" id="daily" name="freq" value="daily">
+			  <label for="daily">daily</label><br>
+			  <input type="radio" id="weekly" name="freq" value="weekly">
+			  <label for="weekly">weekly</label><br>
+			  <input type="radio" id="monthly" name="freq" value="monthly">
+			  <label for="monthly">monthly</label>
+			</form>
+			<p>◙ message?</p>
+			<input type="text" id="ntMessage" class="ntMessageText">
+		</div>
+		
+    </div>
+
+    <div id="currentTasks" class="taskMenu">
+		<label for="ctLabel">Text2</label>
+		<input type="checkbox" id="ctLabel" class="togHidden">
+		<div class="ctBullet"></div>
+    </div>
+
+    <div id="settings" class="taskMenu">
+		<label for="stLabel">Text3</label>
+		<input type="checkbox" id="stLabel" class="togHidden">
+		<div class="stBullet"></div>
+    </div>
+
+    <div id="help" class="taskMenu">
+		<label for="htLabel">Text4</label>
+		<input type="checkbox" id="htLabel" class="togHidden">
+		<div class="htBullet"></div>
+    </div>
+
+</body>
+</html>
