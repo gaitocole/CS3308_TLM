@@ -1,0 +1,107 @@
+body {
+	background: #EEEEEE;
+}
+
+h1 {
+	text-align: center;
+	font-family: "Segoe UI", Segoe, serif;
+	font-size: 40;
+}
+
+h2 {
+	font-family: "Segoe UI", Segoe, serif;
+	font-size: 28;	
+}
+
+.taskMenu {
+	position: relative;
+	left: 10px;
+	font-family: "Segoe UI", Segoe, serif;
+	font-size: 20;
+}
+
+.togHidden {
+	position: relative;
+	right: -1vw;
+	opacity: 0;
+}
+
+.ntBullet::before {
+	position: relative;
+	right: 14px;
+	bottom: 21px;
+	content:'\25D9';
+}
+
+#ntLabel:checked ~ .ntBullet::before {
+	position: relative;
+	bottom: 22px;
+	content:'\29BE';
+}
+
+.ntSubMenu {
+	display: none;
+	position: relative;
+	bottom: 25px;
+}
+
+#ntLabel:checked ~ .ntSubMenu {
+	display: block;
+}
+
+.ntForm {
+	position: relative;
+	left: 150px;
+	bottom: 35px;
+}
+
+.ntMessageText {
+	width: 450px;
+	height: 125px;
+	resize: none;
+}
+
+.ctBullet::before {
+	position: relative;
+	right: 14px;
+	bottom: 21px;
+	content:'\25D9';
+}
+
+#ctLabel:checked ~ .ctBullet::before {
+	position: relative;
+	bottom: 22px;
+	content:'\29BE';
+}
+
+.stBullet::before {
+	position: relative;
+	right: 14px;
+	bottom: 21px;
+	content:'\25D9';
+}
+
+#stLabel:checked ~ .stBullet::before {
+	position: relative;
+	bottom: 22px;
+	content:'\29BE';
+}
+
+.htBullet::before {
+	position: relative;
+	right: 14px;
+	bottom: 21px;
+	content:'\25D9';
+}
+
+#htLabel:checked ~ .htBullet::before {
+	position: relative;
+	bottom: 22px;
+	content:'\29BE';
+}
+
+.error {
+	background-color: darkred;
+	font-family: Arial, sans-serif;
+	font-size: 16;
+}
