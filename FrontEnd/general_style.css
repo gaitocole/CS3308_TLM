@@ -1,0 +1,13 @@
+/* the css rules for MainLandingPage.html */
+
+body {
+	background: green;
+
+}
+#main_header {
+    margin: auto;
+	padding: auto;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: medium;
+}
+
