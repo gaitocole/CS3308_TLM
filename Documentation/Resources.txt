@@ -1,3 +1,5 @@
+A List of Resources for others to use in the group while adding/contributing.
+
 Landing page: https://codepen.io/johndoenma/pen/VXpaVM
               https://fonts.google.com/
               https://fonts.google.com/icons
