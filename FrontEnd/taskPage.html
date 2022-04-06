@@ -13,37 +13,58 @@
 		<div class="ntBullet"></div>
 		
 		<div id="ntInput" class="ntSubMenu">
+			<p>◙ time?</p>
+			<input id="ntTime" placeholder="hh:mm">
+			<br>
 			<p>◙ frequency?</p>
 			<form class="ntForm">
-			  <input type="radio" id="oneTime" name="freq" value="oneTime">
-			  <label for="oneTime">one-time</label><br>
+			  <input type="radio" id="once" name="freq" value="once">
+			  <label for="once">one-time</label>
+			  <input class="togFreq" id="onceFreq" placeholder="mm/dd/yyyy">
+			  <br>
 			  <input type="radio" id="daily" name="freq" value="daily">
-			  <label for="daily">daily</label><br>
+			  <label for="daily">daily</label>
+			  <br>
 			  <input type="radio" id="weekly" name="freq" value="weekly">
-			  <label for="weekly">weekly</label><br>
+			  <label for="weekly">weekly</label>
+			  <select class="togFreq" id="weeklyFreq" style="width: 177px;">
+				<option value="def"> </option>
+				<option value="mon">Monday</option>
+				<option value="tue">Tuesday</option>
+				<option value="wed">Wednesday</option>
+				<option value="thu">Thursday</option>
+				<option value="fri">Friday</option>
+				<option value="sat">Saturday</option>
+				<option value="sun">Sunday</option>
+			  </select>
+			  <br>
 			  <input type="radio" id="monthly" name="freq" value="monthly">
 			  <label for="monthly">monthly</label>
+			  <input class="togFreq" id="monthlyFreq" placeholder="1-31">
 			</form>
 			<p>◙ message?</p>
 			<input type="text" id="ntMessage" class="ntMessageText">
+			<br>
+			<button type="submit" value="Submit">Submit</button>
+			<button type="reset" value="Reset">Reset</button>			
 		</div>
 		
     </div>
 
     <div id="currentTasks" class="taskMenu">
-		<label for="ctLabel">Text2</label>
+		<label for="ctLabel">current tasks</label>
 		<input type="checkbox" id="ctLabel" class="togHidden">
 		<div class="ctBullet"></div>
     </div>
 
     <div id="settings" class="taskMenu">
-		<label for="stLabel">Text3</label>
+		<label for="stLabel" style="text-decoration: line-through;">settings</label>
 		<input type="checkbox" id="stLabel" class="togHidden">
 		<div class="stBullet"></div>
     </div>
 
     <div id="help" class="taskMenu">
-		<label for="htLabel">Text4</label>
+		<label for="htLabel">help</label>
 		<input type="checkbox" id="htLabel" class="togHidden">
 		<div class="htBullet"></div>
     </div>

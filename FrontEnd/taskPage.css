@@ -16,8 +16,14 @@ h2 {
 .taskMenu {
 	position: relative;
 	left: 10px;
+	max-width: 310px;
 	font-family: "Segoe UI", Segoe, serif;
 	font-size: 20;
+}
+
+.togFreq {
+	float: right;
+	display: none;
 }
 
 .togHidden {
@@ -55,10 +61,28 @@ h2 {
 	bottom: 35px;
 }
 
+#ntTime {
+	position: relative;
+	left: 283px;
+	bottom: 35px;
+}
+
 .ntMessageText {
 	width: 450px;
 	height: 125px;
 	resize: none;
+}
+
+#once:checked ~ #onceFreq {
+	display: block;
+}
+
+#weekly:checked ~ #weeklyFreq {
+	display: block;
+}
+
+#monthly:checked ~ #monthlyFreq {
+	display: block;
 }
 
 .ctBullet::before {
