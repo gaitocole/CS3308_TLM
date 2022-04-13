@@ -1,3 +1,4 @@
+#usr/bin/python3
 #For use for CU CS3308 Student project
 import smtplib
 
@@ -19,3 +20,5 @@ s.sendmail("cs3308tasklist@gmail.com", "coga6899@colorado.edu")
 #end session
 s.quit
 
+#Print Confirmation of email sent
+print('Mail Sent')
