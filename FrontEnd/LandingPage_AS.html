@@ -6,27 +6,35 @@
         @import url('https://fonts.googleapis.com/css2?family=Amiko&display=swap');
     </style>
 </head>
-<header class = 'site-header'>
-    <div class = 'site-identity'>
-        <h1><a href = '#'>admon</a></h1>
-    </div>
-    <nav class = 'site-nav'>
-        <ul class = 'nav'>
-            <li><a href = 'http://japanesebreakfast.rocks/'>settings</a></li>
-            <li><a href = '#'>about</a></li>
-            <li><a href = '#'>help</a></li>
-        </ul>
-    </nav>
-</header>
 
-<form action = 'action_page.php' method = 'post'>
-    <div class = 'login'>
-      <label for = 'uname'><b>username</b></label>
-      <input type = 'text' placeholder = 'enter username' name = 'uname' required>
-  
-      <label for = 'psw'><b>password</b></label>
-      <input type = 'password' placeholder = 'enter password' name = 'psw' required>
-  
-      <button type = 'submit'>login</button>
-    </div>
-</form>
+<body>
+    <header class = 'site-header'>
+        <div class = 'site-identity'>
+            <h1><a href = '#'>admon</a></h1>
+        </div>
+        <nav class = 'site-nav'>
+            <ul class = 'nav'>
+                <li><a href = 'http://japanesebreakfast.rocks/'>account</a></li>
+                <li><a href = '#'>about</a></li>
+                <li><a href = '#'>help</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2>login to get things done</h2>
+    <form action = 'action_page.php' method = 'post'>
+        <div class = 'login'>
+            <label for = 'uname'><b>phone number</b></label>
+            <input type = 'text' placeholder = 'enter phone number' name = 'uname' required>
+            
+            <label for = 'psw'><b>password</b></label>
+            <input type = 'password' placeholder = 'enter password' name = 'psw' required>
+        
+            <button type = 'submit'>login</button>
+        </div>
+        <div class = 'new_user'>
+            <a href = 'C:\Users\ASueppel\iCloudDrive\Spring 2022\CSPB 3308\Project_Code\CS3308_TLM\FrontEnd\NewUser.html'>
+                New user? Sign-up to start getting things done.</a>
+        </div>
+    </form>
+</body>

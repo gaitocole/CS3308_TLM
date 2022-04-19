@@ -1,11 +1,30 @@
 body {
-    font-family: 'Amiko', sans-serif;;
+    font-family: 'Amiko', sans-serif;
     margin: 0;
+    /* background-color: #A8D0E6; */
+    color: black;
+    text-transform: lowercase;
 }
+
+
 a {
     text-decoration: none;
     color: #000;
 }
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+
+/* Landing Page */
+
 .site-header {
     border-bottom: 1px solid #000;
     padding: .5em 1em;
@@ -18,7 +37,7 @@ a {
   }
 
 .site-identity {
-    float: left
+    float: left;
 }
 
 .site-identity h1 {
@@ -45,4 +64,74 @@ a {
 .site-nav li {
     display: inline-block;
     margin: 1.4em 1em 1em 1em;
+}
+
+.login {
+    text-align: center;
+    display: list-item;
+    padding: 20px 20px;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+}
+
+/* .login_pass {
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+} */
+
+.new_user {
+    text-align: center;
+    font-size: 12px;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+
+/* New User page */
+
+.new_number {
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.carrier {
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.new_password {
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.re_enter {
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+label {
+	padding-right: 10px;
+}
+
+/* Task Page */
+
+.taskMenu {
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.ntMessageText {
+    padding-bottom: 40px;
+    width: 300px;
 }

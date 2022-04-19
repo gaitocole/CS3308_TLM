@@ -6,38 +6,44 @@
         @import url('https://fonts.googleapis.com/css2?family=Amiko&display=swap');
     </style>
 </head>
-<header class = 'site-header'>
-    <div class = 'site-identity'>
-        <h1><a href = '#'>admon</a></h1>
-    </div>
-    <nav class = 'site-nav'>
-        <ul class = 'nav'>
-            <li><a href = 'http://japanesebreakfast.rocks/'>settings</a></li>
-            <li><a href = '#'>about</a></li>
-            <li><a href = '#'>help</a></li>
-        </ul>
-    </nav>
-</header>
 
-<h1>New User Account Setup</h1>
+<body>
+    <header class = 'site-header'>
+        <div class = 'site-identity'>
+            <h1><a href = '#'>admon</a></h1>
+        </div>
+        <nav class = 'site-nav'>
+            <ul class = 'nav'>
+                <li><a href = 'http://japanesebreakfast.rocks/'>account</a></li>
+                <li><a href = '#'>about</a></li>
+                <li><a href = '#'>help</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<form action = 'action_page.php' method = 'post'>
-    <div class = 'new_number'>
-        <label for = 'uname'><b>phone number</b></label>
-        <input type = 'text' placeholder = '777-777-7777' name = 'uname' required>
-    </div>
-    <div class = 'carrier'>
-        <label for = 'carrier'><b>phone carrier</b></label>
-        <select name = 'carrier' id = 'carrier'>
-            <option disabled hidden selected>Choose carrier</option>
-            <option value = 'tmobile'>T-Mobile</option>
-            <option value = 'verizon'>Verizon</option>
-            <option value = 'att'>AT&T</option>
-            <option value = 'us_cellular'>US Cellular</option>
-            <option value = 'sprint'>Sprint</option>
-        </select>
-    </div>
-    <div class = 'new_password'>
-        <label for = 'psw'><b>password</b></label>
-        <input type = 'password' placeholder = 'create password' name = 'psw' required>
-    </div>
+    <h2>New User Account Setup</h2>
+
+    <form action = 'action_page.php' method = 'post'>
+        <div class = 'new_number'>
+            <label for = 'uname'><b>phone number</b></label>
+            <input type = 'text' placeholder = '777-777-7777' name = 'uname' required>
+        </div>
+        </div>
+        <div class = 'new_password'>
+            <label for = 'psw'><b>password</b></label>
+            <input type = 'password' placeholder = 'create password' name = 'psw' required>
+        </div>
+        <div class = 're_enter'>
+            <label for = 'psw'><b>re-enter password</b></label>
+            <input type = 'password' placeholder = 're-enter password' name = 'psw' required>
+        </div>
+        <div class = 'carrier'>
+            <label for = 'carrier'><b>phone carrier</b></label>
+            <select name = 'carrier' id = 'carrier'>
+                <option disabled hidden selected>Choose carrier</option>
+                <option value = 'tmobile'>T-Mobile</option>
+                <option value = 'verizon'>Verizon</option>
+                <option value = 'att'>AT&T</option>
+                <option value = 'sprint'>Sprint</option>
+            </select>
+</body>
