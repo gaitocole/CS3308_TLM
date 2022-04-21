@@ -1,7 +1,6 @@
 body {
     font-family: 'Amiko', sans-serif;
     margin: 0;
-    /* background-color: #A8D0E6; */
     color: black;
     text-transform: lowercase;
 }
@@ -86,8 +85,8 @@ h2 {
     font-size: 12px;
     padding-top: 20px;
     padding-left: 10px;
+    color: #1520A6;
 }
-
 
 /* New User page */
 
