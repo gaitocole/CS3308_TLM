@@ -2,6 +2,7 @@
 <html>
 <head>
     <link href = "MainStyle_AS.css" type = "text/css" rel = "stylesheet"/>
+    <script src = 'NewUser.js'></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Amiko&display=swap');
     </style>
@@ -23,23 +24,26 @@
 
     <h2>New User Account Setup</h2>
 
-    <form action = 'action_page.php' method = 'post'>
-        <div class = 'new_number'>
+    <div class = 'container'>
+        <form action = 'action_page.php' method = 'post'>
             <label for = 'uname'><b>phone number</b></label>
-            <input type = 'text' placeholder = '777-777-7777' name = 'uname' required>
-        </div>
-        </div>
-        <div class = 'new_password'>
-            <label for = 'psw'><b>password</b></label>
-            <input type = 'password' placeholder = 'create password' name = 'psw' required>
-        </div>
-        <div class = 're_enter'>
-            <label for = 'psw'><b>re-enter password</b></label>
-            <input type = 'password' placeholder = 're-enter password' name = 'psw' required>
-        </div>
-        <div class = 'carrier'>
+            <input type = 'text' placeholder = '7777777777' name = 'uname' required>
+            <br>
+            <br>
+            
+            <label for = 'password1'><b>password</b></label>
+            <input type = 'password' id = 'password1' name = 'password1' placeholder = 'create password' 
+            pattern = '(?=.*\d)(?=.*[a-zA-Z]).{8,}' title = 'Must contain at least one letter, one number, no special characters and be 8 or more characters' required>
+            <br>
+            <br>
+            
+            <label for = 'password2'><b>re-enter password</b></label>
+            <input type = 'password' placeholder = 're-enter password' name = 'password2' required>
+            <br>
+            <br>
+            
             <label for = 'carrier'><b>phone carrier</b></label>
-            <select name = 'carrier' id = 'carrier'>
+            <select name = 'carrier' id = 'carrier' required>
                 <option disabled hidden selected>Choose carrier</option>
                 <option value = 'tmobile'>T-Mobile</option>
                 <option value = 'verizon'>Verizon</option>
@@ -48,6 +52,8 @@
             </select>
             <br>
             <br>
-        <button type = 'submit'>submit</button>
-    </form>
+
+            <button type = 'submit' id = 'acctSubmit' onclick = 'checkPasswordMatch'>create account</button>
+        </form>
+    </div>
 </body>
