@@ -1,26 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link href="taskPage.css" type="text/css" rel="stylesheet"/>
-	<style>
-        @import url('https://fonts.googleapis.com/css2?family=Amiko&display=swap');
-    </style>
+    <link href="/static/taskPage.css" type="text/css" rel="stylesheet"/>
 </head>
 <body>
-	<header class = 'site-header'>
-        <div class = 'site-identity'>
-            <h1><a href = '#'>admon</a></h1>
-        </div>
-        <nav class = 'site-nav'>
-            <ul class = 'nav'>
-                <li><a href = 'http://japanesebreakfast.rocks/'>account</a></li>
-                <li><a href = '#'>about</a></li>
-                <li><a href = '#'>help</a></li>
-            </ul>
-        </nav>
-    </header>
-	<h2>remind me to get things done</h1>
-	<!-- <h2>777-777-777</h2> -->
+	<h1>Remind_Me</h1>
+	<h2>phone_number_goes_here</h2>
 
     <div id="newTask" class="taskMenu">
 		<label for="ntLabel">set new</label>
@@ -28,11 +13,11 @@
 		<div class="ntBullet"></div>
 		
 		<div id="ntInput" class="ntSubMenu">
-			<p>reminder time</p>
-			<input id="ntTime" placeholder="hh:mm">
-			<br>
-			<p>reminder frequency</p>
-			<form class="ntForm">
+			<form class="ntForm" action="" method="POST">
+			  <p>◙ time?</p>
+			  <input id="ntTime" name="time" placeholder="hh:mm">
+			  <br>
+			  <p>◙ frequency?</p>
 			  <input type="radio" id="once" name="freq" value="once">
 			  <label for="once">one-time</label>
 			  <input class="togFreq" id="onceFreq" placeholder="mm/dd/yyyy">
@@ -42,8 +27,8 @@
 			  <br>
 			  <input type="radio" id="weekly" name="freq" value="weekly">
 			  <label for="weekly">weekly</label>
-			  <select class="togFreq" id="weeklyFreq" style="width: 177px;">
-				<option disabled hidden selected>day of week</option>
+			  <select class="togFreq" id="weeklyFreq" name="dayWk" style="width: 177px;">
+				<option value="def"> </option>
 				<option value="mon">Monday</option>
 				<option value="tue">Tuesday</option>
 				<option value="wed">Wednesday</option>
@@ -56,12 +41,12 @@
 			  <input type="radio" id="monthly" name="freq" value="monthly">
 			  <label for="monthly">monthly</label>
 			  <input class="togFreq" id="monthlyFreq" placeholder="1-31">
+			  <p>◙ message?</p>
+			  <input type="text" id="ntMessage" name="msgTxt" class="ntMessageText">
+			  <br>
+			  <input type="submit" value="Submit">
+			  <button type="reset" value="Reset">Reset</button>
 			</form>
-			<p>reminder message</p>
-			<input type="text" id="ntMessage" class="ntMessageText">
-			<br>
-			<button type="submit" value="Submit">submit</button>
-			<button type="reset" value="Reset">reset</button>			
 		</div>
 		
     </div>
@@ -72,17 +57,17 @@
 		<div class="ctBullet"></div>
     </div>
 
-    <!-- <div id="settings" class="taskMenu">
+    <div id="settings" class="taskMenu">
 		<label for="stLabel" style="text-decoration: line-through;">settings</label>
 		<input type="checkbox" id="stLabel" class="togHidden">
 		<div class="stBullet"></div>
-    </div> -->
+    </div>
 
-    <!-- <div id="help" class="taskMenu">
+    <div id="help" class="taskMenu">
 		<label for="htLabel">help</label>
 		<input type="checkbox" id="htLabel" class="togHidden">
 		<div class="htBullet"></div>
-    </div> -->
+    </div>
 
 </body>
 </html>
