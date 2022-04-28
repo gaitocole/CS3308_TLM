@@ -1,5 +1,5 @@
 body {
-    font-family: 'Amiko', sans-serif;
+    font-family: 'Amiko', sans-serif !important;
     margin: 0;
     color: black;
     text-transform: lowercase;
@@ -113,4 +113,10 @@ button {
 .ntMessageText {
     padding-bottom: 40px;
     width: 300px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
